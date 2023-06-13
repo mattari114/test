@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AAA表示とボタン追加</title>
+</head>
+<body>
+  <div id="aaaContainer"></div>
+
+  <script>
+    // AAA表示
+    for (let i = 0; i < 10; i++) {
+      let aaaText = document.createElement("p");
+      aaaText.textContent = "AAA";
+      document.getElementById("aaaContainer").appendChild(aaaText);
+    }
+
+    // ボタン追加
+    let button = document.createElement("button");
+    button.textContent = "ボタン";
+    document.getElementById("aaaContainer").appendChild(button);
+  </script>
+</body>
+</html>
