@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>テキストとボタンの表示</title>
+  <title>テキストの表示と配置</title>
   <style>
-    .flex-container {
+    .container {
       display: flex;
       align-items: center;
     }
   </style>
 </head>
 <body>
-  <div class="flex-container">
-    <p>最初のテキスト</p>
-    <button>最初のテキストの横にボタン</button>
+  <div class="container">
+    <p>A</p>
+    <p>B</p>
+    <p id="cText">C</p>
   </div>
+
+  <script>
+    // CテキストをAの横に追加する
+    var cText = document.getElementById("cText");
+    cText.style.marginLeft = "10px"; // 適切なスタイルを設定して位置を調整
+  </script>
 </body>
 </html>
