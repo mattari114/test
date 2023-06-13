@@ -2,24 +2,25 @@
 <html>
 <head>
   <title>テキストの表示と配置</title>
-  <style>
-    .container {
-      display: flex;
-      align-items: center;
-    }
-  </style>
 </head>
 <body>
-  <div class="container">
-    <p>A</p>
-    <p>B</p>
-    <p id="cText">C</p>
-  </div>
+  <div id="container"></div>
 
   <script>
-    // CテキストをAの横に追加する
-    var cText = document.getElementById("cText");
-    cText.style.marginLeft = "10px"; // 適切なスタイルを設定して位置を調整
+    // 要素を作成して追加
+    var container = document.getElementById("container");
+
+    var textA = document.createElement("p");
+    textA.textContent = "A";
+    container.appendChild(textA);
+
+    var textB = document.createElement("p");
+    textB.textContent = "B";
+    container.appendChild(textB);
+
+    var textC = document.createElement("p");
+    textC.textContent = "C";
+    container.insertBefore(textC, textA.nextSibling);
   </script>
 </body>
 </html>
