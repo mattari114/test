@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>AAA表示とボタン追加</title>
+  <title>テキストとボタンの表示</title>
 </head>
 <body>
-  <div id="aaaContainer"></div>
-
-  <script>
-    // AAA表示
-    for (let i = 0; i < 10; i++) {
-      let aaaText = document.createElement("p");
-      aaaText.textContent = "AAA";
-      document.getElementById("aaaContainer").appendChild(aaaText);
-    }
-
-    // ボタン追加
-    let button = document.createElement("button");
-    button.textContent = "ボタン";
-    document.getElementById("aaaContainer").appendChild(button);
-  </script>
+  <div>
+    <p>最初のテキスト</p>
+    <br>
+    <p>改行後のテキスト</p>
+    <button>最初のテキストの横にボタン</button>
+  </div>
 </body>
 </html>
