@@ -1,37 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>テキストの表示と配置</title>
-  <style>
-    table {
-      border-collapse: collapse;
-    }
-
-    table td {
-      padding: 5px;
-      border: 1px solid black;
-    }
-  </style>
-</head>
-<body>
-  <table>
-    <tr>
-      <td>A</td>
-      <td id="cellC"></td>
-    </tr>
-  </table>
-
-  <script>
-    var cellC = document.getElementById("cellC");
-
-    var textB = document.createElement("p");
-    textB.textContent = "B";
-
-    var textC = document.createElement("p");
-    textC.textContent = "C";
-
-    cellC.appendChild(textB);
-    cellC.appendChild(textC);
-  </script>
-</body>
-</html>
+<table>
+  <tr>
+    <td>テキスト1</td>
+    <td>テキスト2</td>
+    <td>テキスト3</td>
+  </tr>
+  <tr>
+    <td>テキスト4</td>
+    <td>テキスト5</td>
+    <td>テキスト6</td>
+  </tr>
+</table>
